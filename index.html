@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codifica y descubre</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Codifica tu mensaje o desifralo</h1>
+    <h3>a</h3>
+
+    <form class="form">
+      <div id="container">
+        <div id="textoAEncriptar">
+          <div id="inputTexto" style="overflow-y: auto">
+            <input
+              type="input"
+              id="input"
+              placeholder="Ingrese el texto aqui"
+            />
+          </div>
+          <div class="alerta">
+            <p>
+              <span
+                ><img
+                  src="https://res.cloudinary.com/dmiocpap8/image/upload/v1681509209/warning-sign_26a0_bw3juh.png"
+                  width="20px"
+                  height="20px"
+                />
+                Solo letras minusculas y sin acento</span
+              >
+            </p>
+          </div>
+          <div class="botones-texto">
+            <button type="button" class="button" id="encriptar">
+              Encriptar!
+            </button>
+            <button type="button" class="button" id="desencriptar">
+              Desencriptar!
+            </button>
+          </div>
+        </div>
+        <div id="textoEncriptado">
+          <form type="text" class="form">
+            <p type="text" id="pTextoEncriptado"></p>
+            <button type="button" class="button" id="copiar">Copiar</button>
+          </form>
+        </div>
+      </div>
+    </form>
+    <script src="encriptador.js"></script>
+  </body>
+</html>
